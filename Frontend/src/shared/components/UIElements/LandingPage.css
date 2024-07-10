@@ -1,0 +1,50 @@
+.landingPageContainer {
+    color: white;
+    margin: 100px 350px 350px;
+    background-image: linear-gradient(#ffffff18,#0000009c), url('./nature.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+.header1 {
+    overflow-wrap: break-word;
+    font-size: 26px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.header2 {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.header3 {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.landingPage-btns{
+    padding: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    .landingPageContainer {
+        margin: 100px 200px 200px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .landingPageContainer {
+        margin: 100px 100px 100px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .landingPageContainer {
+        margin: 100px 50px 50px;
+    }
+  }
+

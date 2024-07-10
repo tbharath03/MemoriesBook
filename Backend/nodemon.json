@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "tbharath07",
+        "DB_PASSWORD": "1234",
+        "DB_NAME": "Your-Places",
+        "JWT_KEY": "supersecret_dont_share",
+        "MONGO_URL": "mongodb+srv://tbharath07:1234@cluster0.zdjb31h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    }
+}
