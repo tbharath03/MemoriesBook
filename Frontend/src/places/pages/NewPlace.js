@@ -67,7 +67,7 @@ const NewPlace = () => {
             );
             formData.append("image", formState.inputs.image.value);
             await sendRequest(
-                process.env.REACT_APP_BACKEND_URL + "/places",
+                "https://memories-book-api.vercel.app/api/places",
                 "POST",
                 formData,
                 { Authorization: "Bearer " + auth.token }

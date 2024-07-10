@@ -14,7 +14,7 @@ const UserPlaces = () => {
         const fetchPlaces = async () => {
             try {
                 const responeData = await sendRequest(
-                    `${process.env.REACT_APP_BACKEND_URL}/places/user/${userId}`
+                    `$https://memories-book-api.vercel.app/api/places/user/${userId}`
                 );
                 setLoadedPlaces(responeData.places);
             } catch (err) {}

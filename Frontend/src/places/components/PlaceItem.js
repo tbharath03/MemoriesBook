@@ -26,7 +26,7 @@ const PlaceItem = (props) => {
         setShowConfirmModal(false);
         try {
             await sendRequest(
-                `${process.env.REACT_APP_BACKEND_URL}/places/${props.id}`,
+                `https://memories-book-api.vercel.app/api/places/${props.id}`,
                 "DELETE",
                 null,
                 { Authorization: "Bearer " + auth.token }
@@ -76,12 +76,12 @@ const PlaceItem = (props) => {
                     {isLoading && <LoadingSpinner asOverlay />}
                     <div className="place-item__image">
                         <img
-                            src={`${process.env.REACT_APP_ASSET_URL}${props.image}`}
+                            src={`https://memories-book-api.vercel.app/${props.image}`}
                             alt={props.title}
                         />
                     </div>
                     <div className="place-item__info">
-                        <h2>{`${process.env.REACT_APP_ASSET_URL}${props.image}`}</h2>
+                        <h2>{`https://memories-book-api.vercel.app/${props.image}`}</h2>
                         <h2>{props.title}</h2>
                         <h3>{props.address}</h3>
                         <p>{props.description}</p>
