@@ -35,9 +35,14 @@ app.use((req, res, next) => {
 
 app.use((error, req, res, next) => {
     if (req.file) {
-        fs.unlink(req.file.path, (err) => {
-            console.log(err);
-        });
+        try {
+            fs.unlink(req.file.path, (err) => {
+                console.log(err);
+            });
+        } catch (error) {
+            console.log(req.file);
+            console.log("Failed to remove file:", error.message);
+        }
     }
     if (res.headerSent) {
         return next(error);
